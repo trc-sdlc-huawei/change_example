@@ -7,6 +7,8 @@ RUN rm /usr/share/nginx/html/*
 # Copy the static files to the Nginx web server directory
 COPY . /usr/share/nginx/html/
 
+COPY about.html /usr/share/nginx/html/about.html
+
 # Expose port 80 to the outside world
 EXPOSE 80
 
